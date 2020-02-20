@@ -50,6 +50,8 @@ export default {
   methods: {
 
     openModal(modalType) {
+      this.$vuetify.theme.dark = false;
+
       switch (modalType) {
         case 'register' : 
           this.isRegisterActive = true; 
